@@ -7,17 +7,15 @@ This repository provides a GUI tool for controlling the [Newport delay line stag
 - Matlab R2018b
 
 ## 2. Control Window
-<img src="https://github.com/ksonod/image_delay_gui/blob/master/gui_matlab.PNG" width="500px">  
+<img src="https://github.com/ksonod/PCO_delay_scan/blob/master/gui1.PNG" width="500px">  
   
-If you run the gui_stage_camera.m, a new window displayed above will show up. The window consists of 2 main sections:
-- Image Acquisition
-- Delay Stage Control
-The Delay Stage Control section contains 3 subsections:
-- Current Settings
-- Change Settings
-- Delay Scan
+If you run the myPCO_stage.m, a new window displayed above will show up. The window consists of 4 main sections:
+- Image: Settings for a [sCMOS](https://en.wikipedia.org/wiki/SCMOS) camera and window for visualizing an image
+- Delay Stage Scan: Settings for the delay line stage.
+- Shutter: Open and close the shutter
+- Picomotor: Motion control with motors connected to optical mirror mount 
 
-### 2.1 Image Acquisition
+### 2.1 Image
 In this section, an image obtained by a camera is displayed. If you click the Get-an-Image button, the current image will be shown on the window. If you click the Scan-and-Get-Images button, you can see images obtained at different stage positions and save all images in a created folder "scanned images." 
 
 ### 2.2 Delay Stage Control
