@@ -56,7 +56,6 @@ I did not use all tools in the package. However, I did not delete the ones that 
 
 ## 4. Useful References
 - Official document of the Newport Delay Line Stage: https://www.newport.com/mam/celum/celum_assets/resources/DL_Controller_-_Command_Interface_Manual.pdf?1
+- PCO manual: https://www.pco.de/software/third-party-software/matlab/
 - My repository 1 (moving the delay stage with GUI): https://github.com/ksonod/newport_delay_stage_gui_matlab 
-- My repository 2 (getting images): https://github.com/ksonod/delayscan_images
-- My repository 3 (same as the current repository, but no gui): https://github.com/ksonod/delayscan_images
-- My repository 4 (basic usage of Matlab commands for controlling the delay stage): https://github.com/ksonod/newport_delay_stage_basic_matlab
+- My repository 2 (getting images from PCO sCMOS camera): https://github.com/ksonod/pco_simple_gui
