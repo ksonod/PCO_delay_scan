@@ -31,7 +31,14 @@ You can move the stage automatically. Once you specify the initial and final pos
 
 <img src="https://github.com/ksonod/newport_delay_stage_gui_matlab/blob/master/dls_matlab2.PNG" width="400px">
 
-## 3. Useful References
+
+## 3. My main contribution
+Image data acquisition from the camera is achieved by utilizing an official package provided by a company ([link](https://www.pco.de/software/third-party-software/)). The Matlab codes whose name start with "my" are modified version of the provided codes.
+- I adjusted the timing of closing the camera in order to enable multiple image aquisition after proper averaging.
+- I integrated the provided code with the motion control of the delay line stage and optical shutter.
+- The difference of images obtained with a closed and opened shutter can be obtained during the process of the image data aquisition.
+
+## 4. Useful References
 - Official document of the Newport Delay Line Stage: https://www.newport.com/mam/celum/celum_assets/resources/DL_Controller_-_Command_Interface_Manual.pdf?1
 - My repository 1 (moving the delay stage with GUI): https://github.com/ksonod/newport_delay_stage_gui_matlab 
 - My repository 2 (getting images): https://github.com/ksonod/delayscan_images
