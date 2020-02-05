@@ -51,7 +51,7 @@ You can move 2 picomotors (axis 1 and axis 2). The number of the cursor correspo
 Image data acquisition from the sCMOS camera is achieved by utilizing an official package provided by a company ([link](https://www.pco.de/software/third-party-software/)). The Matlab codes whose name start with "my" are modified version of the provided codes.
 - <strong>Save Images</strong>: I adjusted the timing of closing the camera in order to acquire multiple images after taking average. Images can be saved in a new folder.
 - <strong>Integration</strong>: I integrated the provided code with the motion control of the delay line stage and optical shutter.
-- <strong>Image Processing</strong>: The difference of images obtained with a closed and opened shutter can be obtained during the process of the image data aquisition. 
+- <strong>Image Processing</strong>: It is now possible to take average of images. Moreover, the difference of images obtained with a closed and opened shutter can be obtained during the process of the image data aquisition. 
 I did not use all tools in the package. However, I did not delete the ones that were not used because of future possible extension.
 
 ## 4. Useful References
