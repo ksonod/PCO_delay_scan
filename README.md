@@ -45,7 +45,7 @@ You can move the stage. At each position, you can get 2 images from the camera. 
 The button "Open/Close" triggers the motion of the optical shutter.
 
 ### 2.4 Picomotor
-You can move 2 picomotors (axis 1 and axis 2). The number of the cursor corresponds to the amount of movement. 
+You can move 2 picomotors (axis 1 and axis 2). The number of the cursor corresponds to the amount of movement. The movement of the picomotor allows us to do the fine tuning of optomechanics.
 
 ## 3. My main contribution
 Image data acquisition from the sCMOS camera is achieved by utilizing an official package provided by a company ([link](https://www.pco.de/software/third-party-software/)). The Matlab codes whose name start with "my" are modified version of the provided codes.
