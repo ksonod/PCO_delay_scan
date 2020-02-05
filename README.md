@@ -7,7 +7,7 @@ This repository provides a GUI tool for controlling the [Newport delay line stag
 - Matlab R2018b
 
 ## 2. Control Window
-<img src="https://github.com/ksonod/PCO_delay_scan/blob/master/gui1.PNG" width="500px">  
+<img src="https://github.com/ksonod/PCO_delay_scan/blob/master/gui1.PNG" width="700px">  
   
 If you run the myPCO_stage.m, a new window displayed above will show up. The window consists of 4 main sections:
 - Image: Settings for a [sCMOS](https://en.wikipedia.org/wiki/SCMOS) camera and window for visualizing an image
