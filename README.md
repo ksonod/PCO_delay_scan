@@ -59,3 +59,4 @@ I did not use all tools in the package. However, I did not delete the ones that 
 - PCO manual: https://www.pco.de/software/third-party-software/matlab/
 - My repository 1 (moving the delay stage with GUI): https://github.com/ksonod/newport_delay_stage_gui_matlab 
 - My repository 2 (getting images from PCO sCMOS camera): https://github.com/ksonod/pco_simple_gui
+- My repository 3 (controlling picomotor): https://github.com/ksonod/picomotor_controller
