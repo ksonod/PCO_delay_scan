@@ -29,12 +29,9 @@ You can change the position, velocity, and acceleration.
 #### (3) Delay Scan 
 You can move the stage automatically. Once you specify the initial and final positions and the number of steps, you can click the Calculate-Time-Settings button and get the time step and time range of the scan. The Start-Scanning button initiates the movement of the delay stage. The Scan-and-Get-Images button initiates the image acquisition while the delay stage is moving.
 
-<img src="https://github.com/ksonod/newport_delay_stage_gui_matlab/blob/master/dls_matlab2.PNG" width="400px">
-
-
 ## 3. My main contribution
 Image data acquisition from the camera is achieved by utilizing an official package provided by a company ([link](https://www.pco.de/software/third-party-software/)). The Matlab codes whose name start with "my" are modified version of the provided codes.
-- I adjusted the timing of closing the camera in order to enable multiple image aquisition after proper averaging.
+- I adjusted the timing of closing the camera in order to acquire multiple images after taking average.
 - I integrated the provided code with the motion control of the delay line stage and optical shutter.
 - The difference of images obtained with a closed and opened shutter can be obtained during the process of the image data aquisition.
 
