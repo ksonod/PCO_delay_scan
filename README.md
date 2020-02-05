@@ -16,24 +16,43 @@ If you run the myPCO_stage.m, a new window displayed above will show up. The win
 - Picomotor: Motion control with motors connected to optical mirror mount 
 
 ### 2.1 Image
-In this section, an image obtained by a camera is displayed. If you click the Get-an-Image button, the current image will be shown on the window. If you click the Scan-and-Get-Images button, you can see images obtained at different stage positions and save all images in a created folder "scanned images." 
+In this section, an image obtained by a camera is displayed. There are 3 adjustable parameters:
+- Exposure time: This is exposure time in ms.
+- Average number: The average number, n_ave, allows us to get an image averaged over n_ave images. 
+- Number of Images: This is the number of images that you want to get. This should be specified before clicking Save-Multiple-Images button.
+There are 3 buttons here:
+- Get an Imgage: If you click it, the current image will be shown on the window.
+- Save an Image: If you click it, you can save the image in the current folder. 
+- Save Multiple Images: You can save multiple images in a new folder. The number of images can be specified. 
 
-### 2.2 Delay Stage Control
-With the options in this section, you can control the delay stage. 
+### 2.2 Delay Stage Control 
 #### (1) Current Settings
 After clicking the show button, the current position, velocity, and acceleration are shown. 
 
 #### (2) Change Settings
 You can change the position, velocity, and acceleration.
 
-#### (3) Delay Scan 
-You can move the stage automatically. Once you specify the initial and final positions and the number of steps, you can click the Calculate-Time-Settings button and get the time step and time range of the scan. The Start-Scanning button initiates the movement of the delay stage. The Scan-and-Get-Images button initiates the image acquisition while the delay stage is moving.
+#### (3) Move the Stage 
+You can move the stage. Once you specify the initial and final positions and the number of steps, you can click the Calculate-Time-Settings button and get the time step and time range of the scan. The Start button initiates the movement of the delay stage. 
+
+#### (4) Move the Stage and Get Images 
+You can move the stage. At each position, you can get an image from the camera. The exposure time and average number should be specified in the Image section. The Start button initiates the movement of the delay stage and the image data acquisition. All of the images acquired during the scan are saved in a new folder.
+
+#### (5) Move the Stage, Activate the Shutter, and Get Images 
+You can move the stage. At each position, you can get 2 images from the camera. One is recorded when the shutter is closed, the other is obtained when it is opened. The difference of the 2 images is calculated by Image(shutter opened) - Image(shutter closed) and saved in a new folder. The exposure time and average number should be specified in the Image section. The Start button initiates the movement of the delay stage and the image data acquisition. 
+
+### 2.3 Shutter
+The button "Open/Close" triggers the motion of the optical shutter.
+
+### 2.4 Picomotor
+You can move 2 picomotors (axis 1 and axis 2). The number of the cursor corresponds to the amount of movement. 
 
 ## 3. My main contribution
-Image data acquisition from the camera is achieved by utilizing an official package provided by a company ([link](https://www.pco.de/software/third-party-software/)). The Matlab codes whose name start with "my" are modified version of the provided codes.
+Image data acquisition from the sCMOS camera is achieved by utilizing an official package provided by a company ([link](https://www.pco.de/software/third-party-software/)). The Matlab codes whose name start with "my" are modified version of the provided codes.
 - I adjusted the timing of closing the camera in order to acquire multiple images after taking average.
 - I integrated the provided code with the motion control of the delay line stage and optical shutter.
 - The difference of images obtained with a closed and opened shutter can be obtained during the process of the image data aquisition.
+I did not use all tools in the package. However, I did not delete the ones that were not used because of future possible extension.
 
 ## 4. Useful References
 - Official document of the Newport Delay Line Stage: https://www.newport.com/mam/celum/celum_assets/resources/DL_Controller_-_Command_Interface_Manual.pdf?1
